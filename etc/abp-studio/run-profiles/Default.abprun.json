@@ -1,0 +1,13 @@
+﻿{
+  "applications": {
+    "MOZ.StoreManagement.Web": {
+      "type": "dotnet-project",
+      "launchUrl": "https://localhost:44389",
+      "path": "../../../src/MOZ.StoreManagement.Web/MOZ.StoreManagement.Web.csproj",
+      "kubernetesService": ".*-web$",
+      "execution": {
+        "order": 2
+      }
+    }
+  }
+}

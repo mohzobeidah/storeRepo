@@ -1,0 +1,105 @@
+{
+  "template": "app",
+  "imports": {
+    "Volo.Abp.LeptonXLiteTheme": {
+      "version": "4.0.6",
+      "isInstalled": true
+    },
+    "Volo.Abp.Account": {
+      "version": "9.0.4",
+      "isInstalled": true
+    },
+    "Volo.Abp.OpenIddict": {
+      "version": "9.0.4",
+      "isInstalled": true
+    },
+    "Volo.Abp.Identity": {
+      "version": "9.0.4",
+      "isInstalled": true
+    },
+    "Volo.Abp.TenantManagement": {
+      "version": "9.0.4",
+      "isInstalled": true
+    },
+    "Volo.Abp.SettingManagement": {
+      "version": "9.0.4",
+      "isInstalled": true
+    },
+    "Volo.Abp.PermissionManagement": {
+      "version": "9.0.4",
+      "isInstalled": true
+    },
+    "Volo.Abp.FeatureManagement": {
+      "version": "9.0.4",
+      "isInstalled": true
+    }
+  },
+  "folders": {
+    "items": {
+      "src": {},
+      "test": {}
+    }
+  },
+  "packages": {
+    "MOZ.StoreManagement.Application": {
+      "path": "src/MOZ.StoreManagement.Application/MOZ.StoreManagement.Application.abppkg",
+      "folder": "src"
+    },
+    "MOZ.StoreManagement.Application.Tests": {
+      "path": "test/MOZ.StoreManagement.Application.Tests/MOZ.StoreManagement.Application.Tests.abppkg",
+      "folder": "test"
+    },
+    "MOZ.StoreManagement.Domain.Shared": {
+      "path": "src/MOZ.StoreManagement.Domain.Shared/MOZ.StoreManagement.Domain.Shared.abppkg",
+      "folder": "src"
+    },
+    "MOZ.StoreManagement.Application.Contracts": {
+      "path": "src/MOZ.StoreManagement.Application.Contracts/MOZ.StoreManagement.Application.Contracts.abppkg",
+      "folder": "src"
+    },
+    "MOZ.StoreManagement.HttpApi": {
+      "path": "src/MOZ.StoreManagement.HttpApi/MOZ.StoreManagement.HttpApi.abppkg",
+      "folder": "src"
+    },
+    "MOZ.StoreManagement.HttpApi.Client": {
+      "path": "src/MOZ.StoreManagement.HttpApi.Client/MOZ.StoreManagement.HttpApi.Client.abppkg",
+      "folder": "src"
+    },
+    "MOZ.StoreManagement.Web": {
+      "path": "src/MOZ.StoreManagement.Web/MOZ.StoreManagement.Web.abppkg",
+      "folder": "src"
+    },
+    "MOZ.StoreManagement.Web.Tests": {
+      "path": "test/MOZ.StoreManagement.Web.Tests/MOZ.StoreManagement.Web.Tests.abppkg",
+      "folder": "test"
+    },
+    "MOZ.StoreManagement.EntityFrameworkCore.Tests": {
+      "path": "test/MOZ.StoreManagement.EntityFrameworkCore.Tests/MOZ.StoreManagement.EntityFrameworkCore.Tests.abppkg",
+      "folder": "test"
+    },
+    "MOZ.StoreManagement.EntityFrameworkCore": {
+      "path": "src/MOZ.StoreManagement.EntityFrameworkCore/MOZ.StoreManagement.EntityFrameworkCore.abppkg",
+      "folder": "src"
+    },
+    "MOZ.StoreManagement.TestBase": {
+      "path": "test/MOZ.StoreManagement.TestBase/MOZ.StoreManagement.TestBase.abppkg",
+      "folder": "test"
+    },
+    "MOZ.StoreManagement.Domain.Tests": {
+      "path": "test/MOZ.StoreManagement.Domain.Tests/MOZ.StoreManagement.Domain.Tests.abppkg",
+      "folder": "test"
+    },
+    "MOZ.StoreManagement.HttpApi.Client.ConsoleTestApp": {
+      "path": "test/MOZ.StoreManagement.HttpApi.Client.ConsoleTestApp/MOZ.StoreManagement.HttpApi.Client.ConsoleTestApp.abppkg",
+      "folder": "test"
+    },
+    "MOZ.StoreManagement.DbMigrator": {
+      "path": "src/MOZ.StoreManagement.DbMigrator/MOZ.StoreManagement.DbMigrator.abppkg",
+      "folder": "src"
+    },
+    "MOZ.StoreManagement.Domain": {
+      "path": "src/MOZ.StoreManagement.Domain/MOZ.StoreManagement.Domain.abppkg",
+      "folder": "src"
+    }
+  }
+}
