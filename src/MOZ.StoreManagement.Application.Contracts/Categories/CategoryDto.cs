@@ -17,6 +17,16 @@ public class CreateCategoryDto
     public string Name { get; set; }
     [DisplayName("Category:Description")]
     [TextArea(Rows = 4)]
-    public string Description { get; set; }
+    public string? Description { get; set; }
+   
+}
+public class UpdateCategoryDto
+{
+    
+    [DisplayName("Category:Name")]
+    public string Name { get; set; }
+    [DisplayName("Category:Description")]
+    [TextArea(Rows = 4)]
+    public string? Description { get; set; }
    
 }

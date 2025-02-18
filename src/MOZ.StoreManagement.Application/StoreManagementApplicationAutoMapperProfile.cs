@@ -12,6 +12,8 @@ public class StoreManagementApplicationAutoMapperProfile : Profile
         CreateMap<CreateUpdateBookDto, Book>();
         CreateMap<CreateCategoryDto, Category>().ReverseMap();
         CreateMap<CategoryDto, Category>().ReverseMap();
+        CreateMap<UpdateCategoryDto, CategoryDto>().ReverseMap();
+        CreateMap<UpdateCategoryDto, Category>().ReverseMap();
         /* You can configure your AutoMapper mapping configuration here.
          * Alternatively, you can split your mapping configurations
          * into multiple profile classes for a better organization. */

@@ -11,7 +11,7 @@ public class CategoryService : CrudAppService<
     CategoryDto, //Used to show books
     int, //Primary key of the book entity
     PagedAndSortedResultRequestDto, //Used for paging/sorting
-    CreateCategoryDto>,ICategoryService
+    CreateCategoryDto,UpdateCategoryDto>,ICategoryService
 {
     private readonly IRepository<Category> _categoryRepository;
 
