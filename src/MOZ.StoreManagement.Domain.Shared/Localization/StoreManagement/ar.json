@@ -37,6 +37,13 @@
     "Unspecified": "نظام",
     "SeeAllUsers": "رؤية كافة المستخدمين",
     "TakePhoto": "تصوير",
-    "ChoosePhoto": "اختر صورة"
+    "ChoosePhoto": "اختر صورة",
+    "Actions": "الاجراءات",
+    "Category": "الصنف",
+    "NewCategory": "صنف جديد",
+    "Categories": "الأصناف",
+    "Category:Name": "اسم الصنف",
+    "Category:Description": "الوصف"
+    
   }
 }

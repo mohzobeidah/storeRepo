@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Volo.Abp.AuditLogging.EntityFrameworkCore;
 using MOZ.StoreManagement.Books;
+using MOZ.StoreManagement.Categories;
 using Volo.Abp.BackgroundJobs.EntityFrameworkCore;
 using Volo.Abp.BlobStoring.Database.EntityFrameworkCore;
 using Volo.Abp.Data;
@@ -29,6 +30,7 @@ public class StoreManagementDbContext :
     /* Add DbSet properties for your Aggregate Roots / Entities here. */
 
     public DbSet<Book> Books { get; set; }
+    public DbSet<Category> Categories { get; set; }
 
     #region Entities from the modules
 
@@ -81,6 +83,8 @@ public class StoreManagementDbContext :
         builder.ConfigureTenantManagement();
         builder.ConfigureBlobStoring();
         
+        //
+        
         builder.Entity<Book>(b =>
         {
             b.ToTable(StoreManagementConsts.DbTablePrefix + "Books",
@@ -89,6 +93,12 @@ public class StoreManagementDbContext :
             b.Property(x => x.Name).IsRequired().HasMaxLength(128);
         });
         
+        builder.Entity<Category>(b =>
+        {
+            b.ToTable("AppCategories"); // Table name
+            b.ConfigureByConvention();  // Use ABP's conventions
+            b.HasIndex(c => new { c.Name, c.TenantId }); // Index for multi-tenancy
+        });
         /* Configure your own tables/entities inside here */
 
         //builder.Entity<YourEntity>(b =>

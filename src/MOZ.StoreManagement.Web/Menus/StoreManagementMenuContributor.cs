@@ -34,7 +34,14 @@ public class StoreManagementMenuContributor : IMenuContributor
                 order: 1
             )
         );
-
+        context.Menu.AddItem(
+            new ApplicationMenuItem(
+                "Category",
+                "Categories",
+                "/Categories",
+                icon: "fas fa-tags"
+            )
+        );
 
         //Administration
         var administration = context.Menu.GetAdministration();
