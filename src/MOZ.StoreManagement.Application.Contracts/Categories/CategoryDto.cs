@@ -1,3 +1,4 @@
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.TagHelpers.Form;
 
@@ -12,7 +13,9 @@ public class CategoryDto
 
 public class CreateCategoryDto
 {
+    [DisplayName("Category:Name")]
     public string Name { get; set; }
+    [DisplayName("Category:Description")]
     [TextArea(Rows = 4)]
     public string Description { get; set; }
    

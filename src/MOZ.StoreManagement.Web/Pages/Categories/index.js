@@ -1,9 +1,7 @@
 $(function () {
     var l = abp.localization.getResource('StoreManagement');
     var createModal = new abp.ModalManager(abp.appPath + 'categories/CreateModal');
-    createModal.onOpen(function (modal) {
-        modal.find('[name="HiddenProperty"]').closest('.form-group').hide(); // Hide the field
-    });
+   
     var editModal = new abp.ModalManager(abp.appPath + 'categories/EditModal');
 
     var dataTable = $('#BooksTable').DataTable(
@@ -34,7 +32,7 @@ $(function () {
                                         return l('BookDeletionConfirmationMessage', data.record.name);
                                     },
                                     action: function (data) {
-                                        mOZ.storeManagement.books.book
+                                        mOZ.storeManagement.categories.category
                                             .delete(data.record.id)
                                             .then(function() {
                                                 abp.notify.info(l('SuccessfullyDeleted'));
